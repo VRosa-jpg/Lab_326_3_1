@@ -6,7 +6,6 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Blog preview card</title>
 
@@ -19,46 +18,49 @@
 <body>
 
   <!-- vw of Screen -->
-  <div class="d-flex justify-content-center bg-custom-class">
+  <div class="d-flex justify-content-center bg-custom-class vh-100" style="background-color: #f4d04e;"> 
 
     <!-- Content Container: Blog Preview card -->
-    <div id="contentContainer" class="d-flex flex-column rounded w-25 bg-light p-2">
+    <div id="contentContainer" class="card d-flex flex-column justify-content-start border-dark bg-light m-auto p-3" style="width: 20rem; border-radius: 15px;">
 
       <!-- Image -->
-      <img src="illustration-article.svg" alt="Article SVG" class="rounded">
+      <img src="illustration-article.svg" alt="Article SVG" style="border-radius: 15px;">
 
       <!-- Category Label -->
-      <div class="bg-custom-class">
-        <h6 class="w-25">Learning</h6>
-      </div>
+      <div class="card-body">
+        <!-- Label -->
+        <div class="card-img-top rounded d-flex justify-content-center" style="background-color: #f4d04e; padding: .05em; width: 40%;">
+          <h6 style="font-weight: bold;">Learning</h6>
+        </div>
 
-      <!-- Publish date -->
-      <div>
-        <h6>Published 21 Dec 2023</h6>
-      </div>
+        <!-- Publish date -->
+        <div>
+          <p style="font-size: 12px; font-weight:500;">Published 21 Dec 2023</p>
+        </div>
 
-      <!-- Title -->
-      <div>
-        <h3>HTML & CSS foundations</h3>
-      </div>
+        <!-- Title -->
+        <div>
+          <h3 style="font-weight: bolder; font-size:21px;">HTML & CSS Foundations</h3>
+        </div>
 
-      <!-- Desciption -->
-      <div>
-        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-      </div>
+        <!-- Desciption -->
+        <div>
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
 
-      <!-- Author -->
-      <div>
-        <img src="image-avatar.webp" alt="">
-        Greg Hooper
-      </div>
+        <!-- Author -->
+        <div>
+          <img src="image-avatar.webp" alt="">
+          Greg Hooper
+        </div>
+    </div>
 
     </div>
 
   </div>
 
   <!-- Author Information -->
-  <div class="d-flex justify-content-center">
+  <div class="p-2" style="background-color: #f4d04e;">
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
